@@ -1,356 +1,630 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Story by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Die Briten - Red River - Konzepterweiterung</title>
+        <meta
+            name="description"
+            content="Erweiterung und Anpassung des Konzepts der Fraktion Die Briten auf Red River."
+        />
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Story</h1>
-							<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Oswald:wght@400;500;600&family=Montserrat:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Magna etiam feugiat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
-						</div>
-					</section>
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Tempus adipiscing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section>
+        <!-- Custom Styles -->
+        <link href="./assets/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Splash Screen -->
+        <div id="splashScreen" class="splash-screen">
+            <div class="splash-content">
+                <div class="subhead">Von der Bande zur Mafia</div>
+                <h1 class="splash-title">Ein Konzept für den Server</h1>
+                <img src="./assets/img/logo_final_page.png" alt="Die Briten Logo" class="splash-logo" />
+                <button id="startBtn" class="btn splash-btn" type="button">Jetzt starten</button>
+            </div>
+        </div>
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section>
+        <header class="nav">
+            <div class="nav-inner">
+                <div class="brand">Die&nbsp;Briten</div>
+                <nav class="links">
+                    <a href="#s1" class="active">Konzept</a>
+                    <a href="#s2">Ausgangslage</a>
+                    <a href="#s3">Status&nbsp;Quo</a>
+                    <a href="#s4">Wandel</a>
+                    <a href="#s5">Konstanten</a>
+                    <a href="#s6">Änderungen</a>
+                    <a href="#s7">Struktur</a>
+                    <a href="#s8">Operationsweise</a>
+                    <a href="#s9">OOC</a>
+                    <a href="#s10">Vision</a>
+                </nav>
 
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <span class="current-page">Konzept</span>
+                    <button class="burger-menu" id="burgerMenu" type="button" aria-label="Menü öffnen">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
+                <!-- Mobile Dropdown -->
+                <div class="mobile-dropdown" id="mobileDropdown">
+                    <a href="#s2">Ausgangslage</a>
+                    <a href="#s3">Status&nbsp;Quo</a>
+                    <a href="#s4">Wandel</a>
+                    <a href="#s5">Konstanten</a>
+                    <a href="#s6">Änderungen</a>
+                    <a href="#s7">Struktur</a>
+                    <a href="#s8">Operationsweise</a>
+                    <a href="#s9">OOC</a>
+                    <a href="#s10">Vision</a>
+                </div>
+            </div>
+        </header>
 
-					</section>
+        <main>
+            <!-- 1. Hero -->
+            <section class="hero" id="s1">
+                <div class="content" data-aos="fade-up">
+                    <div class="subhead">DIE BRITEN - RED RIVER</div>
+                    <h1>Von der Bande zur Mafia</h1>
+                    <p class="hero-description">Saint Denis als neue Bühne – Visualisierung unseres Wandels.</p>
+                    <!-- CTA: „Reise beginnen“ + Scroll zu #s2 -->
+                    <button id="ctaStart" class="btn" type="button">Reise beginnen</button>
+                </div>
+            </section>
 
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
+            <!-- 2. Ausgangslage -->
+            <section class="panel alt" id="s2">
+                <div class="container">
+                    <h2 data-aos="fade-up">Ausgangslage</h2>
+                    <div class="divider"></div>
+                    <div class="grid col-2">
+                        <div class="card" data-aos="fade-up">
+                            <h3>Ursprungskonzept</h3>
+                            <p
+                                class="expandable-text"
+                                data-full-text="Die Briten entstanden aus einem festen Kern von acht bis zehn Spielern, die schon seit Jahren gemeinsam RP betreiben und aus dem Hardcore Roleplay-Segment kommen. Von Beginn an war uns klar, dass wir Geschichten erzählen wollten, die länger tragen als ein einzelner Abend. Unsere Figuren sollten sich entwickeln und an Gewicht gewinnen und unser Projekt sollte sich bewusst von klassischen Outlaw-Banden unterscheiden. Unser Ziel war es, im Osten eine britisch geprägte Gruppe zu etablieren, die Elemente des Outlaw-Lebens mit der Haltung und Disziplin von Gangstern verbindet.<br><br> Dieses Zusammenspiel wurde schnell zu unserem Markenzeichen. Wir traten kontrolliert, strukturiert und mit einem klaren Stil auf. Andere Fraktionen erkannten schnell, dass wir eine andere Tiefe an Spielweise verfolgten. Wir setzten auf Langzeit-RP und konsistentes Storytelling anstelle von schnellen Konflikten. Im Spiel spiegelte sich dieser Anspruch in der Herkunft unserer Charaktere aus Liverpool wider. Die Treue zur eigenen Kultur zeigte sich in Sprache, Auftreten und auch in unserer Standortwahl. Mit der Braithwaite Manor fanden wir einen Ort, der unsere Rolle verkörperte. Seriosität, Einfluss und Nähe zur gehobenen Gesellschaft wurden dort Teil unseres Auftretens.<br><br> Von hier aus nahmen wir Handelsbeziehungen auf, unter anderem mit den Natives, und begannen Strukturen für unser RP aufzubauen. Unsere Geschäftspartner wussten schnell, dass man uns vertrauen konnte, solange Loyalität gewahrt blieb. Wer diesen Grundsatz missachtete, musste jedoch mit Konsequenzen rechnen. Aus OOC-Sicht waren unsere Voraussetzungen ideal. Wir brachten ein eingespieltes Team, eine klare britische Ausrichtung und den Anspruch mit, etwas zu entwickeln, das sich über Monate und Jahre hinweg weiter entfalten sollte."
+                                data-title="Ursprungskonzept"
+                            >
+                                <span class="text-preview"></span>
+                                <button class="read-more-btn" type="button">Mehr lesen</button>
+                            </p>
+                            <div class="subhead" style="margin-top: 8px">Ankommen • Manor • Handel mit Natives</div>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/img/sdankunft.png" alt="Ankunft" loading="lazy" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+            <!-- 3. Status Quo -->
+            <section class="bgbreak bg-statusquo" id="s3">
+                <div class="inner container" data-aos="fade-up">
+                    <h2>Status Quo nach 6 Monaten</h2>
+                    <div class="grid col-1" style="margin-bottom: 20px">
+                        <div class="card">
+                            <p>
+                                Nach sechs Monaten zählen die Briten zu den beständigsten Fraktionen des Servers.
+                                Während viele Gruppen in dieser Zeit entstanden und wieder verschwunden sind, konnten
+                                wir durch klare Strukturen, konsequente Konzepttreue und kontinuierliche Arbeit
+                                bestehen. Unser Auftreten war nie auf künstliche Eskalation ausgelegt. Stattdessen
+                                setzten wir auf planvolles Handeln und nachhaltiges Wachstum. Alle Konflikte, in die wir
+                                bislang geraten sind, konnten wir für uns entscheiden. Das lag nicht an blinder
+                                Aggression, sondern an Organisation und guter Vorbereitung. Besonders im Osten - unserer
+                                Heimat, hat sich dadurch eine deutliche Dominanz entwickelt. Niemand wagt es, uns offen
+                                anzugreifen - nicht aus Angst, sondern weil Einfluss, Reichweite und Ressourcen auf
+                                unserer Seite stehen. Damit zeigt sich, dass echte Stärke nicht durch schnelle Kriege
+                                oder eine kurzzeitig große Anzahl an Mitgliedern entsteht. Sie wächst durch Struktur,
+                                durch Geduld und durch konsequentes Handeln. Schritt für Schritt haben wir uns zu einer
+                                festen Größe entwickelt, die heute fest mit der Identität des Servers verbunden ist.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid col-3">
+                        <div class="card">
+                            <h3>Route</h3>
+                            <p>Eigene Handelslinien – Stadt, Hafen, Hinterland.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Wirtschaftlicher Aufstieg</h3>
+                            <p>Geldströme stabil, Zugriff auf Ware.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Ruf &amp; Einfluss</h3>
+                            <p>Reich an Geld &amp; Waffen, gefürchteter Name.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-						</div>
-					</section>
+            <!-- 4. Warum Wandel -->
+            <section class="panel" id="s4">
+                <div class="container">
+                    <h2 data-aos="fade-up">Warum ein Wandel?</h2>
+                    <div class="grid col-2">
+                        <div class="card" data-aos="fade-right">
+                            <h3>IC</h3>
+                            <p>
+                                Nach sechs Monaten haben die Briten den Punkt erreicht, an dem das klassische
+                                Bandenleben an seine Grenzen stößt. Geldreserven und Waffenbestände sind mehr als
+                                ausreichend, unser Ruf im Osten ist gefestigt und kaum eine Fraktion kann uns ernsthaft
+                                herausfordern. Damit stellt sich nicht mehr die Frage, ob wir überleben, sondern wie wir
+                                unseren Status sinnvoll ausbauen. Die logische Konsequenz ist der Schritt von der Bande
+                                hin zur Mafia. Auf dem Server gab es bisher keine Fraktion, die mafiöses RP dauerhaft
+                                und konsequent umgesetzt hat. Wir verfügen über die Substanz und das Image, um genau
+                                diese Lücke zu füllen und RP-Stränge mit Regierung, Verwaltung und Zivilisten
+                                aufzubauen.
+                            </p>
+                        </div>
+                        <div class="card" data-aos="fade-left">
+                            <h3>OOC</h3>
+                            <p>
+                                Auch außerhalb des Spiels sind wir an einem Wendepunkt. Wir könnten Kriege führen, nur
+                                um Ressourcen abzubauen, doch das entspricht weder unserem Konzept noch unserem
+                                Anspruch. Stattdessen wollen wir unsere Mittel als Grundlage für nachhaltiges Mafia-RP
+                                nutzen. Dazu gehört auch, dass wir uns als Questgeber verstehen. Unser Überschuss an
+                                Geld, Waffen und Kontakten ermöglicht es, kleineren Gruppen oder einzelnen Spielern
+                                Aufträge zu geben und damit neue Geschichten anzustoßen. So setzen wir Ressourcen nicht
+                                sinnlos ein, sondern verwandeln sie in langfristiges Roleplay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+            <!-- 5. Was bleibt gleich -->
+            <section class="panel alt" id="s5">
+                <div class="container">
+                    <h2 data-aos="fade-up">Was bleibt gleich?</h2>
+                    <div class="grid">
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-up">
+                                <h3>Britische Identität &amp; Stil</h3>
+                                <p>
+                                    Auch mit der Umstellung auf mafiöse Strukturen bleiben die zentralen Merkmale der
+                                    Briten erhalten. Unsere britische Identität, geprägt durch Sprache, Herkunft und
+                                    Kultur, bleibt das wichtigste Wiedererkennungszeichen. Ebenso bleibt unser
+                                    Erscheinungsbild in braun und schwarz bestehen, ein Stil, der Seriosität und
+                                    Disziplin vermittelt und zugleich eine kontrollierte Härte ausstrahlt.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-up" data-aos-delay="75">
+                                <h3>Hierarchie</h3>
+                                <p>
+                                    Die Führungsstruktur ändert sich nicht grundlegend. Entscheidungen laufen weiterhin
+                                    autoritär von oben nach unten, mit klar verteilten Verantwortlichkeiten. Loyalität
+                                    und Disziplin bleiben dabei unverhandelbar. Wer die Prinzipien der Fraktion
+                                    missachtet, muss auch künftig mit Konsequenzen rechnen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-up" data-aos-delay="150">
+                                <h3>Prinzipien</h3>
+                                <p>
+                                    Unsere Leitlinien und die Philosophie unseres IC-Denkens bleiben unverändert. Wir
+                                    vertreten weiterhin eine klare Haltung gegenüber Spielern, die Beruf, Bande oder
+                                    Loyalität beliebig wechseln. Für uns ist das tiefgründige und konsistente Ausspielen
+                                    eines Charakters, der mit uns interagieren möchte, unerlässlich. Sowohl aus
+                                    logischen als auch immersiven Gründen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-up" data-aos-delay="150">
+                                <h3>Konfliktverhalten</h3>
+                                <p>
+                                    Gewalt gehört nach wie vor zu unserem Repertoire, wird jedoch gezielt und taktisch
+                                    eingesetzt. Sie dient der Abschreckung und der Durchsetzung, nicht dem Selbstzweck.
+                                    Damit bleiben wir unserem Anspruch treu, langfristiges und konsistentes Storytelling
+                                    zu betreiben. Die Mafia-Struktur soll diese Stärke vertiefen und mehr Raum für
+                                    komplexe RP-Stränge schaffen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			</div>
+            <!-- 6. Was ändert sich -->
+            <section class="panel" id="s6">
+                <div class="container">
+                    <h2 data-aos="fade-up">Was ändert sich?</h2>
+                    <div class="grid">
+                        <div class="grid col-2">
+                            <div class="card" data-aos="fade-up">
+                                <p>
+                                    Mit dem Wandel von einer gehobenen Bande zu einer Mafia verändern sich Zweck,
+                                    Struktur und Methoden unserer Fraktion. Die wichtigsten Unterschiede lassen sich so
+                                    zusammenfassen:
+                                </p>
+                            </div>
+                            <img
+                                src="./assets/img/sdgasse.png"
+                                alt="Wandel"
+                                loading="lazy"
+                                class="img-responsive"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            />
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-left">
+                                <h3>Von Bande zu Mafia</h3>
+                                <p>
+                                    Wir treten nicht länger als Outlaw-Bande auf, sondern als organisiertes Syndikat
+                                    (Mafia) mit klaren Rollen und einem geschäftsmäßigen Auftreten. Die britische Note
+                                    bleibt, doch die Inszenierung wird eleganter, strategischer und langfristiger.
+                                    Offene Straßenkämpfe weichen verdeckter Einflussnahme. Immersives Vorbild sind hier
+                                    klar die Peaky Blinders (Serie).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-right">
+                                <h3>Strengere interne Struktur</h3>
+                                <p>
+                                    Die Führung bildet ein Dreieck aus Oberhaupt, Rechte Hand und Linke Hand. Darunter
+                                    stehen Mitglieder, die spezifische Aufgaben übernehmen. Abteilungen wie Sicherheit,
+                                    Handel, Finanzen, Kontakte oder Questvergabe sorgen für klare Zuständigkeiten und
+                                    weniger Beliebigkeit. Jeder Einzelne soll eine erkennbare Identität im RP
+                                    verkörpern. Keine Zinnsoldaten, die alle gleich aussehen und sich gleich verhalten.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-left">
+                                <h3>Methoden und Vorgehen</h3>
+                                <p>
+                                    Statt offener Gewalt liegt der Fokus auf Interaktion und subtiler Macht.
+                                    Schutzsysteme für Unternehmen, Geschäftsleute als Fassade, Korruption in Politik und
+                                    Verwaltung sowie Questgeber-RP für kleinere Gruppen schaffen Dynamik, die nicht auf
+                                    sinnlose Kriege angewiesen ist.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-right">
+                                <h3>Standort und Ausrichtung</h3>
+                                <p>
+                                    Der Osten bleibt unsere Heimat, doch Saint-Denis wird zum Zentrum und zur neuen
+                                    Heimat, die gepflegt und geschützt wird. Dort bauen wir Einfluss auf Politik,
+                                    Wirtschaft und Unterwelt auf. Territorialer Besitz außerhalb der Stadt ist nicht
+                                    unser Ziel, entscheidend ist Kontrolle über Beziehungen und Netzwerke.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-left">
+                                <h3>Auftritt und Verhalten</h3>
+                                <p>
+                                    Wir erscheinen dezent, gehoben und diszipliniert. Braun und schwarz bleiben unsere
+                                    Farben, Schiebermützen und Anzüge betonen den Charakter. Gewalt wird gezielt
+                                    eingesetzt, nicht massenhaft. In der Wahrnehmung sollen wir weniger als Straßengang
+                                    und mehr als unsichtbare Macht im Hintergrund gelten.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card" data-aos="fade-right">
+                                <h3>OOC-Regeln</h3>
+                                <p>
+                                    Große Operationen oder Eingriffe in staatliche Strukturen werden mit der
+                                    Fraktionsverwaltung abgesprochen und dokumentiert. Wir nutzen keine OOC-Vorteile,
+                                    sondern handeln konsequent im RP. Unsere Questvergabe folgt festen Regeln, um
+                                    Fairness und Nachvollziehbarkeit zu sichern.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <!-- 7. Neue Struktur -->
+            <section class="panel alt" id="s7">
+                <div class="container">
+                    <h2 data-aos="fade-up">Neue Struktur</h2>
+                    <div class="grid col-2">
+                        <div class="card" data-aos="fade-up">
+                            <p>
+                                Mit dem Schritt zur Mafia wird unsere innere Ordnung strenger und verbindlicher. Die
+                                Ränge bleiben im Kern bestehen, doch die Ansprüche an jedes einzelne Mitglied steigen
+                                deutlich. Es reicht nicht mehr, einfach Teil der Fraktion zu sein. Jeder Charakter soll
+                                eine eigene Identität verkörpern, die zum Gesamtbild beiträgt, und damit das Gefühl
+                                erzeugen, dass man es mit einer echten Organisation zu tun hat.
+                            </p>
+                        </div>
+                        <img
+                            src="./assets/img/sdph1.png"
+                            alt="Wandel"
+                            loading="lazy"
+                            class="img-responsive"
+                            data-aos="fade-up"
+                        />
+                        <img
+                            src="./assets/img/sdph3.png"
+                            alt="Wandel"
+                            loading="lazy"
+                            class="img-responsive"
+                            data-aos="fade-up"
+                            data-aos-delay="75"
+                        />
+                        <div class="card" data-aos="fade-up" data-aos-delay="75">
+                            <p>
+                                Disziplin und Verlässlichkeit stehen im Vordergrund. Als Mafia und zugleich als
+                                Questgeber-Fraktion wollen wir Begegnungen schaffen, die Atmosphäre tragen und im
+                                Gedächtnis bleiben. Damit dies gelingt, werden Regeln klarer formuliert, die Zügel enger
+                                gehalten und das Verhalten des Einzelnen konsequenter geprüft.
+                            </p>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="150">
+                            <p>
+                                Im Zuge der Konzeptumstellung werden wir bewusst die Zahl unserer Mitglieder reduzieren.
+                                Statt auf Größe zu setzen, stellen wir Verantwortung und Charakterentwicklung in den
+                                Mittelpunkt. Jeder Spieler soll die Möglichkeit haben, seine Rolle sichtbar auszuspielen
+                                und so zum Gesamtkonzept beizutragen. Dadurch können wir auch mit weniger Mitgliedern
+                                ein konsistentes, glaubwürdiges Mafia-RP gestalten.
+                            </p>
+                        </div>
+                        <img
+                            src="./assets/img/sdhandel.png"
+                            alt="Wandel"
+                            loading="lazy"
+                            class="img-responsive"
+                            data-aos="fade-up"
+                            data-aos-delay="150"
+                        />
+                        <img
+                            src="./assets/img/sdkroenung.png"
+                            alt="Wandel"
+                            loading="lazy"
+                            class="img-responsive"
+                            data-aos="fade-up"
+                            data-aos-delay="225"
+                        />
+                        <div class="card" data-aos="fade-up" data-aos-delay="225">
+                            <p>
+                                Uns ist bewusst, dass nicht alle diesen Umbruch mitgehen können oder wollen. Manche
+                                werden ihren Platz nicht finden und sich trennen, was wir transparent und einvernehmlich
+                                handhaben werden. Am Ende steht ein klares Ziel. Lieber eine kleinere, disziplinierte
+                                und konsistente Mafia als eine große, uneinheitliche Bande.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-	</body>
+            <!-- 8. Operationsweise -->
+            <section class="bgbreak bg-ops" id="s8">
+                <div class="inner container" data-aos="fade-up">
+                    <h2>Operationsweise</h2>
+                    <div class="grid col-1" style="margin-bottom: 20px">
+                        <p>
+                            Unsere Arbeit zielt nicht auf Dauerkriege, sondern auf Einfluss, Atmosphäre und langfristige
+                            Geschichten. Handel, Glücksspiel, Korruption und gezielte Gewalt bilden die Schwerpunkte.
+                        </p>
+                    </div>
+                    <div class="grid col-3" style="margin-bottom: 20px">
+                        <div class="card">
+                            <h3>Handel &amp; Geschäfte</h3>
+                            <ul>
+                                <li>Unternehmen als Deckung und RP-Orte</li>
+                                <li>Schmuggelrouten und Warenflüsse storybasiert statt mechanisch</li>
+                                <li>Glücksspiel und Wetten als Einnahmequelle und Treffpunkt für RP</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Questgeber-Rolle</h3>
+                            <ul>
+                                <li>
+                                    Aufträge an kleinere Gruppen oder Einzelspieler (Eskorten, Beschaffungen,
+                                    Problemlösungen)
+                                </li>
+                                <li>Belohnungen: Geld, Waffen, Kontakte – immer RP-orientiert</li>
+                                <li>Internes Regelwerk für Fairness und Transparenz</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Schutzgeldsystem</h3>
+                            <ul>
+                                <li>Schutz wird als Alternative angeboten, nicht als Zwang</li>
+                                <li>Entscheidung beim Unternehmer → Mafia, Staat oder Selbsthilfe</li>
+                                <li>Fokus auf moralischen Konflikt statt mechanischem Abkassieren</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid col-2" style="margin-bottom: 20px">
+                        <div class="card">
+                            <h3>Politische Korruption & Regierungs-RP</h3>
+                            <ul>
+                                <li>Hinterzimmertreffen, Bestechung, Informationsaustausch</li>
+                                <li>Nur nach Absprache mit der FV-Führung und ggf. dokumentiert</li>
+                                <li>
+                                    Bietet auch Regierungsspielern und Staatsdienern neue Spielstränge hinein in die
+                                    Crime Welt
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Gewalt & Durchsetzung</h3>
+                            <ul>
+                                <li>
+                                    Gezielt statt massenhaft → Einschüchterungen, Schlägereien, einzelne Säuberungen
+                                </li>
+                                <li>Offene Kriege nur als extreme Ausnahme</li>
+                                <li>Ziel ist Atmosphäre und Story, nicht sinnlose Eskalation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid col-1" style="margin-bottom: 20px">
+                        <div class="card">
+                            <h3>Beispiele</h3>
+                            <ul>
+                                <li>Ein Unternehmen bittet um Schutz, es entsteht ein Verhandlungs-RP</li>
+                                <li>
+                                    Ein Regierungsbeamter will Informationen, Informationen wechseln den Besitzer und
+                                    ggf. Treffen mit anderen Banden
+                                </li>
+                                <li>
+                                    Leute von uns übernehmen einen Transport, Bezahlung und mögliche Gegenwehr inklusive
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. OOC-Vorteile -->
+            <section class="panel" id="s9">
+                <div class="container">
+                    <h2 data-aos="fade-up">OOC-Vorteile</h2>
+                    <p>
+                        Mit der Umstellung zur Mafia-Struktur starten wir ein Projekt, das es in dieser Form bisher
+                        nicht gab. Viele Crime-Fraktionen beschränkten sich bislang auf das Abgrasen von Routen oder das
+                        Sammeln von Ressourcen. Unser Ziel ist es, Crime-RP mit einem höheren Anspruch zu etablieren und
+                        den Server damit langfristig zu bereichern.
+                    </p>
+                    <div class="grid col-2">
+                        <div class="card" data-aos="fade-up">
+                            <h3>Unser Ansatz</h3>
+                            <ul>
+                                <li>Höherer Anspruch → Geschichten statt Mechaniken, Langzeit-RP statt Grind</li>
+                                <li>
+                                    Mehr Dynamik → Questgeber-RP, Schutzsysteme und Korruption schaffen Angebote, die
+                                    Kriege aus Langeweile überflüssig machen
+                                </li>
+                                <li>
+                                    Erweiterung des Crime-RP → Einbindung von Zivilisten, Staatsfraktionen und kleineren
+                                    Gruppen
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="75">
+                            <h3>Vorteile für den Server</h3>
+                            <ul>
+                                <li>Nachhaltiges RP durch Schutzsysteme, Frontfirmen und Aufträge</li>
+                                <li>
+                                    Mehr Spielerrollen, auch für Nebenfiguren wie Buchhalter, Mittelsmänner oder
+                                    Informanten
+                                </li>
+                                <li>Klare Ansprechpartner für Verwaltung und andere Fraktionen</li>
+                                <li>
+                                    Multiplikator-Effekt → Wir nutzen unsere Ressourcen, um andere Spieler ins RP zu
+                                    ziehen und ihnen Storylines zu ermöglichen
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        Kurz gesagt, wir verstehen uns nicht als abgeschlossene Machtbande, sondern als Motor für RP.
+                        Unser Ziel ist ein Crime-RP, das nachhaltig, tiefgründig und vielseitig ist. Genau das, was dem
+                        Server bisher fehlte.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 10. Fazit & Vision -->
+            <section class="panel alt" id="s10">
+                <div class="container" data-aos="fade-up">
+                    <h2>Fazit &amp; Vision</h2>
+                    <p style="font-style: italic">
+                        „Von der Bande zur Mafia – der logische Schritt. Saint Denis als neue Bühne.“
+                    </p>
+                    <p>
+                        Der Schritt von einer Bande hin zur Mafia ist für uns die logische Weiterentwicklung. Über
+                        Monate hinweg haben wir konsequent und konzepttreu gespielt, Ressourcen und Einfluss aufgebaut
+                        und uns im Osten als feste Größe etabliert. Nun geht es nicht darum, den Server mit Kriegen zu
+                        überziehen oder substanzlose Machtkämpfe zu führen. Der nächste Schritt ist, unsere Mittel in
+                        Geschichten und neue RP-Angebote umzuwandeln. Unser Vorbild sind die Peaky Blinders. Der
+                        britische Hintergrund unserer Fraktion passt perfekt zu diesem Ansatz, und Saint Denis bietet
+                        die ideale Bühne, um diesen Stil in größerem, organisierten Rahmen auszuspielen. Wir wollen das,
+                        was wir aufgebaut haben, nutzen, um anderen Spielern neue Möglichkeiten zu geben, nicht nur für
+                        uns selbst, sondern für den gesamten Server. Ein zentraler Teil unserer Vision ist es, als
+                        neutrale Crime-Fraktion zu agieren. Unser Ziel liegt nicht in der Bereicherung einzelner,
+                        sondern in der Schaffung von RP-Angeboten für andere. Dazu gehören Schutzsysteme, die moralische
+                        Entscheidungen eröffnen, Questgeber-RP für kleinere Gruppen oder Einzelspieler, organisierte
+                        Stränge mit Regierungs- und Staatsfraktionen und gezielte Event-Elemente, die in Zusammenarbeit
+                        mit dem Support entstehen können. Untergrundauktionen sowie Verkäufe, Schmuggelwaren aus Übersee
+                        oder besondere Items könnten über uns ins Spiel gebracht und an andere Fraktionen verteilt
+                        werden. So entsteht ein natürlicher Knotenpunkt, über den Support-Event-Charaktere und Spieler
+                        aller Ebenen in die Unterwelt eingebunden werden. Damit eröffnen wir nicht nur unserer Fraktion,
+                        sondern dem gesamten Server neue Dynamiken, besonders im Bereich der kleinkriminellen und
+                        mittleren Ebene, die bisher kaum Beachtung gefunden hat. Zusammengefasst wollen wir von der
+                        Bande zur Mafia werden, weil es der einzig logische Schritt aus unserer Geschichte und
+                        Ausgangslage ist. Noch wichtiger ist jedoch, dass wir nicht länger nur für uns selbst spielen,
+                        sondern das Ziel verfolgen, mehr Vielfalt im Crime-RP zu schaffen.
+                    </p>
+                    <hr style="margin-top: 20px" />
+                    <div class="credit">
+                        <strong>Credits:</strong>
+                        <ul>
+                            <li>Ideengebung + Konzept: Cramper</li>
+                            <li>Visualisierung + Konzept: San</li>
+                        </ul>
+                    </div>
+                    <div class="credit">
+                        <strong>Special Thanks:</strong>
+                        <ul>
+                            <li>Technische Umsetzung: CHXST aka. Loqicx</li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div class="credit">
+                        Design basiert auf
+                        <a href="https://html5up.net/story" target="_blank" rel="noopener">HTML5 UP – Story</a> (CCA
+                        3.0, Attribution erhalten).
+                    </div>
+                    <div class="credit">
+                        <a href="https://www.youtube.com/watch?v=xPztMXEgeUs" target="_blank" rel="noopener"
+                            >Ambient Track (YouTube)</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal für "Mehr lesen" -->
+        <div id="readMoreModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Vollständiger Text</h3>
+                    <span class="modal-close" id="modalClose">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p id="modalText"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Controls -->
+        <button id="backToTop" title="Zurück nach oben">↑</button>
+        <button id="soundToggle" title="Sound an/aus">🔇</button>
+
+        <!-- YouTube Ambient (unsichtbar) -->
+        <div id="yt-ambient" class="hidden-element"></div>
+        <!-- Lokaler Fallback (lege /./assets/audio/ambient.mp3 ab) -->
+        <audio id="ambLocal" src="./assets/audio/ambient.mp3" preload="auto" loop></audio>
+
+        <!-- Scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
